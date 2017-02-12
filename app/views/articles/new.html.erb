@@ -7,7 +7,7 @@
         <div class="contol-label col-md-1">
           <%= f.label :title %>
         </div>
-        <div class="col-md-11">
+        <div class="col-md-8">
           <%= f.text_field :title, class: "form-control", placeholder: "Title", autofocus: true %>
         </div>
       </div>
@@ -15,13 +15,13 @@
         <div class="contol-label col-md-1">
           <%= f.label :body %>
         </div>
-        <div class="col-md-11">
-          <%= f.text_area :body, rows: 10, class: "form-horizontal", placeholder: "Body" %>
+        <div class="col-md-8">
+          <%= f.text_area :body, rows: 10, class: "form-control", placeholder: "Body" %>
         </div>
       </div>
 
       <div class="form-group">
-        <div class="col-md-offset-1 col-md11">
+        <div class="col-md-offset-1 col-md-8">
           <%= f.submit class: "btn btn-primary btn-lg pull-right" %>
         </div>
       </div>
