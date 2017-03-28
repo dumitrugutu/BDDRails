@@ -1,6 +1,15 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+$darkpurple: #64103f;
+
 .edit-delete {
   margin-top: 20px;
+}
+
+// Sign up -- Sign in
+.sign-link {
+  a {
+    color: $darkpurple;
+  }
 }
