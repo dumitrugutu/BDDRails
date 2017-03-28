@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Signup users" do
+RSpec.feature "Signing in users" do
   before do
     @joe = User.create(email: "joe@example.com", password: "password")
   end
@@ -15,7 +15,7 @@ RSpec.feature "Signup users" do
 
     expect(page).to have_content("Signed in successfully.")
     expect(page).to have_content("Signed in as #{@joe.email}")
-    expect(page).not_to have_link("Log in")
+    expect(page).not_to have_link("Sign in")
     expect(page).not_to have_link("Sign up")
   end
 end
